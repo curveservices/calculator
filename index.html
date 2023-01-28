@@ -5,11 +5,21 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
-    <script src="./styles.css" defer></script>
+    <script src="./script.js" defer></script>
     
     <title>JavaScript Calculator</title>
 </head>
 <body>
-    <div class="container"></div>
+    <main class="calc">
+        <div class="container"></div>
+        <div id="display"></div>
+        <button class="clear" value="clear"data-key="8">A/C</button>
+        <button class="sign" value="sign">+/-</button>
+        <button class="percent" value="percent">%</button>
+        <button class="operator" value="/" onlick="divide()">/</button>
+        <button class="operand" value="7">7</button>
+        <button class="operand" value="8">8</button>
+        <button class="operand" value="9">9</button>
+    </main>
 </body>
 </html>
