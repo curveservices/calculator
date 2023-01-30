@@ -1,14 +1,30 @@
-//temp prompts to test
-let a = prompt('enter a number');
-let b = prompt('enter another');
-let c = prompt('select an operator')
-let num1 = parseInt(a);
-let num2 = parseInt(b);
-let operator = c;
-console.log('num1',num1);
-console.log('num2', num2)
-console.log('operator used', operator)
-//temp prompts to test
+//create function for display (scorecard rps??) 
+function display()
+//Button Event Listeners
+const buttons = document.querySelectorAll('button');
+
+buttons.forEach((button)=> {
+    button.addEventListener('click', () =>{
+        userSelection = button.dataset.type;
+        display(userSelection)
+        console.log(userSelection)
+    })
+})
+//Functions to populate the display, store value in a variable
+//somewhere
+
+
+//temporary prompts to test
+// let a = prompt('enter a number');
+// let b = prompt('enter another');
+// let c = prompt('select an operator')
+// let num1 = parseInt(a);
+// let num2 = parseInt(b);
+// let operator = c;
+// console.log('num1',num1);
+// console.log('num2', num2)
+// console.log('operator used', operator)
+//temporary prompts to test
 
 //OPERATORS
 //create functions for + - * % and test in console.log 
@@ -19,7 +35,7 @@ function add(num1, num2) {
 }
 function subtract(num1, num2) {
     let minusValue = (num1 - num2);
-    console.log('minsus', minusValue);
+    console.log('minus', minusValue);
     //return minusValue    
 }
 function multiply(num1, num2) {
@@ -64,8 +80,5 @@ function operate(operator, num1, num2) {
     }
 } 
 operate(operator,num1,num2)
-//
-//create basic HTML calc w/btns for each digit, all above ops 
-//An 'equals' btn, A display & a clear(AC) btn.
 
-//create function for display (scorecard rps??) 
+
