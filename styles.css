@@ -1,28 +1,36 @@
 /*  COLOR PALETTE
-    BACKGROUND COLOR    #126EDE
-    OPERATOR COLOR      #ED9121*/
+    BACKGROUND COLOR    #B8D8FF
+    CALUCULATOR COLOR   #E8E8E8
+    SOLAR COLOR         #360202
+    DISPLAY COLOR       #B2B9B7
+    OPERATOR COLOR      #ED9121
+    TOP COLOR           #2B2B2B*/
+
     @import url('https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Orbitron&display=swap');
+
 
 body {
+    font-family: 'Orbitron', sans-serif;
     margin: auto;
     background-color: #b8d8ff;
 }
 .calculator {
-    width:fit-content;
-    height:max-content;
+    width:max-content;
+    height:fit-content;
     background-color: #E8E8E8;
     box-shadow: inset 0.5px 0px 12px 2px;
     border-radius: 5%;
-    padding: 20px;
-    margin: 25px 30px 20px 150px; 
+    padding: 5px 10px 30px 10px;
+    margin: 5px auto; 
 }
 
 .title {
-    font-family: sans-serif;
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
-    padding: 20px 0px;
+    justify-content: space-around;
+    padding: 20px 0px 5px 0px;
+    gap: 30px;
     
 }
 
@@ -33,8 +41,7 @@ body {
 }
 
 #solar {
-    width: 12em;
-    height: auto;
+    width: 14em;
     border: black solid 2px;
     border-radius: 5%;
     background-color: #360202;
@@ -53,21 +60,26 @@ body {
     justify-content: space-around;
     align-items: flex-end;
     padding: 5px;
-    font-size: 5.5em;
+    font-family: 'Orbitron', sans-serif;
+    font-size: 4em;
     font-weight: initial;
     text-shadow: 1.3px 1.3px #383838;
     box-shadow: inset 1.5px 1.5px 12px 0px;
-    border: 3px solid #4D4648;
+    border: 2px solid #4D4648;
     border-radius: 1.5%;
-    margin: 20px;
+    margin: 10px 10px;
+}
+hr {
+    height: 3px ;
+    background-color: #6e6e6e;
 }
 
 .buttons-grid {
     display: grid;
+    justify-content: center;
     grid-template-columns: repeat(4, 100px);
-    grid-template-rows: minmax(auto, 90px) repeat(5, 80px);
-    gap: 4px;
-    margin: 1px 15px;   
+    grid-template-rows: minmax(auto, 90px) repeat(4, 80px);
+    gap: 8px;
 }
 
 .operator {
@@ -101,7 +113,7 @@ button:active {
 footer {
     font-family: 'Rock Salt', sans-serif;
     text-align: center;
-    padding: 10px;
+    padding: 0px;
     color: black;
     font-weight: 900;
 }
