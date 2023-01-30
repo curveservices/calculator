@@ -1,0 +1,111 @@
+/*  COLOR PALETTE
+    BACKGROUND COLOR    #126EDE
+    OPERATOR COLOR      #ED9121*/
+    @import url('https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap');
+
+body {
+    margin: auto;
+    background-color: #b8d8ff;
+}
+.calculator {
+    width:fit-content;
+    height:max-content;
+    background-color: #E8E8E8;
+    box-shadow: inset 0.5px 0px 12px 2px;
+    border-radius: 5%;
+    padding: 20px;
+    margin: 25px 30px 20px 150px; 
+}
+
+.title {
+    font-family: sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 20px 0px;
+    
+}
+
+#name {
+    font-size: larger;
+    font-weight: bold;
+    font-stretch:extra-expanded;
+}
+
+#solar {
+    width: 12em;
+    height: auto;
+    border: black solid 2px;
+    border-radius: 5%;
+    background-color: #360202;
+    padding: 25px 0px;
+
+}
+
+#model1 {
+    font-size: x-small;
+}
+
+#display {
+    background-color: #b2b9b7;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-end;
+    padding: 5px;
+    font-size: 5.5em;
+    font-weight: initial;
+    text-shadow: 1.3px 1.3px #383838;
+    box-shadow: inset 1.5px 1.5px 12px 0px;
+    border: 3px solid #4D4648;
+    border-radius: 1.5%;
+    margin: 20px;
+}
+
+.buttons-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 100px);
+    grid-template-rows: minmax(auto, 90px) repeat(5, 80px);
+    gap: 4px;
+    margin: 1px 15px;   
+}
+
+.operator {
+  background-color: #ED9121;
+}
+.top {
+    background-color: #2b2b2b;
+}
+#zero {
+    grid-column: span 2;
+}
+
+button {
+    margin: 1px;
+    border-radius: 5%;
+    font-weight: initial;
+    font-size: 2em;
+    font-family: monospace;
+    color: linen;
+    background-color: #6e6e6e ;
+    border-radius: 5%;
+    cursor: pointer;
+    box-shadow: 2px 2px 2px 1px #656565;
+}
+
+button:active {
+    background-color: #b2b9b7;
+    
+}
+
+footer {
+    font-family: 'Rock Salt', sans-serif;
+    text-align: center;
+    padding: 10px;
+    color: black;
+    font-weight: 900;
+}
+a {
+  text-decoration: none;
+  color: #cc0000;
+}
