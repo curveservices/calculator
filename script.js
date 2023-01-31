@@ -36,9 +36,45 @@ document.addEventListener("DOMContentLoaded", function () {
     })
 
     equal.addEventListener("click", function(){
-        calculate();
+        if(currentValue != '' && previousValue != ''){
+            operate();
+            previousScreen.textContent = '';
+            if(previousValue.length <= 7) {
+                currentScreen.textContent = previousValue;
+            } else {
+                currentScreen.textContent = previousValue.slice(0,7)+ "...";
+            }
+        }
     })
+
+    decimal.addEventListener("click", function(){
+        addDecimal();
+    })
+
 })
+
+
+//DOM for decimal button
+
+// decimalBtn.addEventListener('click', ()=> {
+//     console.log('decimal pressed');
+//     let decimalBtn = ".";
+//     const calcDisplay = document.querySelector('#display');
+//     if (operator == "") {
+//         const calcDisplay = document.querySelector('#display');
+//         tempNum1Array.push(decimalBtn);
+//         num1 = tempNum1Array.join("");
+//         calcDisplay.textContent = num1;
+//         document.getElementById("decimal").disabled = false;
+//     } else {
+//         const calcDisplay = document.querySelector('#display');
+//         tempNum2Array.push(decimalBtn);
+//         num2 = tempNum2Array.join("");
+//         calcDisplay.textContent = num2;
+//         document.getElementById("decimal").disabled = true;
+
+//     }
+// })
 
 
 // //function for operators and numbers selection
@@ -55,7 +91,7 @@ function handleOperater(op) {
 }
 
 //create function for + - * ÷ and test in console.log 
-function calculate() {
+function operate() {
     previousValue = Number(previousValue);
     currentValue = Number(currentValue);
 
@@ -65,32 +101,30 @@ function calculate() {
         previousValue -= currentValue;
     } else if(operator === "x"){
         previousValue *= currentValue;
-    } else{
+    } else if(currentValue === 0){
+        alert("You can't divide by 0")
+    } else {
         previousValue /= currentValue;
     }
+
+    previousValue = round(previousValue);
+    previousValue = previousValue.toString();
+    currentValue = previousValue.toString();
+
     console.log(previousValue)
 }
 
+//round numbers
+function round(num){
+    return Math.round(num * 1000) / 1000;
+}
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+function addDecimal(){
+    if(!currentValue.includes(".")){
+        currentValue += '.';
+}
+ 
 
 // let num1 = 0;
 // let tempNum1Array = [];
@@ -201,21 +235,10 @@ function calculate() {
 //         })
 //     })
 // }
-// //function for numbers
-// function number()
-
-
-
-
-// //somewhere
-
-// //DOM Clear button location.reload
-// const clearBtn = document.querySelector(".clear");
-// clearBtn.addEventListener('click', () => {location.reload(); });
 
 // //DOM for +/-  button append to numArray1 and display out
 // const signbtn = document.querySelector('.sign');
-//     signbtn.addEventListener('cleck', ()=> {
+//     signbtn.addEventListener('click', ()=> {
 //         if (operator == "") {
 //             const calcDisplay = document.querySelector('#display');
 //             console.log('negative button registered');
@@ -234,27 +257,7 @@ function calculate() {
 //         }
 //     })
 
-// //DOM for decimal button
-// const decimalBtn = document.querySelector("#decimal");
-// decimalBtn.addEventListener('click', ()=> {
-//     console.log('decimal pressed');
-//     let decimalBtn = ".";
-//     const calcDisplay = document.querySelector('#display');
-//     if (operator == "") {
-//         const calcDisplay = document.querySelector('#display');
-//         tempNum1Array.push(decimalBtn);
-//         num1 = tempNum1Array.join("");
-//         calcDisplay.textContent = num1;
-//         document.getElementById("decimal").disabled = false;
-//     } else {
-//         const calcDisplay = document.querySelector('#display');
-//         tempNum2Array.push(decimalBtn);
-//         num2 = tempNum2Array.join("");
-//         calcDisplay.textContent = num2;
-//         document.getElementById("decimal").disabled = true;
 
-//     }
-// })
    
 
 
