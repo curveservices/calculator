@@ -87,8 +87,8 @@ hr {
 .buttons-grid {
     display: grid;
     justify-content: center;
-    grid-template-columns: repeat(4, 100px);
-    grid-template-rows: minmax(auto, 90px) repeat(4, 80px);
+    grid-template-columns: repeat(4, 115px);
+    grid-template-rows: minmax(auto, 80px) repeat(4, 80px);
     gap: 8px;
 }
 
@@ -97,7 +97,7 @@ button {
     border-radius: 5%;
     font-weight: initial;
     font-size: 2em;
-    font-family: monospace;
+    font-family: 'Orbitron', sans-serif;
     color: linen;
     background-color: #6e6e6e ;
     border-radius: 10px;
@@ -124,14 +124,22 @@ button:active {
 
 
 footer {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    gap: 12px;
     font-family: 'Rock Salt', sans-serif;
     text-align: center;
-    padding: 0px;
     color: black;
-    font-weight: 900;
+    font-weight:bolder;
 }
 
 a {
   text-decoration: none;
   color: #cc0000;
+}
+ 
+.footerImg{
+    padding: 10px 0px;
+    align-items: center;
 }
