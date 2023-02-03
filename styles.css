@@ -122,6 +122,9 @@ button:active {
     grid-column: span 2;
 }
 
+#bs {
+    grid-column: span 2;
+}
 
 footer {
     display: flex;
