@@ -7,6 +7,7 @@ const previousScreen = document.querySelector(".previous");
 const currentScreen = document.querySelector(".current");
 
 //keyboard support
+window.addEventListener('keydown', handleKeyboard);
 
 //Button eventListeners. 
 const equal = document.querySelector(".equal");
@@ -20,6 +21,7 @@ equal.addEventListener("click", () => {
 const decimal = document.querySelector(".decimal");
 decimal.addEventListener("click", () => {
     addDecimal();
+
 });
 
 //create clear button
@@ -39,6 +41,9 @@ operators.forEach((btn) => {
         handleOperater(e.target.textContent);
     })
 })
+
+const backspace = document.querySelector(".backspace");
+backspace.addEventListener("click", handleDelete);
     
 //Functions for operators, numbers & btns above
 function handleNumber(num) {
@@ -124,6 +129,49 @@ function clearCalculator() {
 
 function addDecimal() {
     if (currentValue.includes(".")) {
-        currentValue -= ".";
+        currentValue -= (".")
+        currentScreen.textContent = currentValue;
     }
 }
+
+function handleDelete() {
+    if (currentValue != "") {
+        currentValue = currentValue.slice(0, -1);
+        currentScreen.textContent = currentValue;
+        if (currentValue === "") {
+            currentScreen.textContent = "0";
+        }
+    }
+    if (currentValue === "" && previousValue != "" && operator === "") {
+        previousValue = previousValue.slice(0, -1);
+        currentScreen.textContent = previousValue;
+    }
+}
+
+function handleKeyboard(e) {
+    e.preventDefault();
+    if (e.key >= 0 && e.key <= 9) {
+        handleNumber(e.key);
+    }
+    if (e.key === "Enter" || 
+    (e.key === "=" && currentValue != "" && previousValue !="")
+    ) {
+        calculate();
+    }
+    if (e.key === "+" || e.key === "-" || e.key === "/") {
+        handleOperater(e.key);
+    }
+    if (e.key === "*") {
+        handleOperater("x");
+    }
+    if (e.key === ".") {
+        addDecimal();
+    }
+    if (e.key === "Escape") {
+        clearCalculator();
+    }
+    if (e.key === "Backspace") {
+        handleDelete()
+    }
+}
+
