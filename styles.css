@@ -13,8 +13,10 @@
 body {
     font-family: 'Orbitron', sans-serif;
     margin: auto;
-    background-color: #b8d8ff;
+    /* background-color: #b8d8ff; */
 }
+
+
 .calculator {
     width:max-content;
     height:fit-content;
