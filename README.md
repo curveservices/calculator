@@ -2,7 +2,7 @@
 Live Demo :
 <a href="https://curveservices.github.io/calculator/">
 
-<img width="1241" alt="Screenshot 2023-02-22 at 15 30 15" src="https://user-images.githubusercontent.com/101556296/220672876-6a473a2e-c8e8-43ab-8288-a3f61689cae4.png">
+<img width="1080" alt="Screenshot 2023-02-22 at 15 30 15" src="https://user-images.githubusercontent.com/101556296/220672876-6a473a2e-c8e8-43ab-8288-a3f61689cae4.png">
 
 
 This was the final project the <a href="https://www.theodinproject.com/lessons/foundations-calculator">Calculator assignment</a> on the foundation course of <a href="https://www.theodinproject.com/lessons/foundations-calculator">The Odin Project<a>. I have combind everything I've learned so far. Using JavaScript, HTML, and CSS I have created an on-screen calculator.
