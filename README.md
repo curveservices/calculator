@@ -7,7 +7,7 @@ Live Demo :
 
 This was the final project the <a href="https://www.theodinproject.com/lessons/foundations-calculator">Calculator assignment</a> on the foundation course of <a href="https://www.theodinproject.com/lessons/foundations-calculator">The Odin Project<a>. I have combind everything I've learned so far. Using JavaScript, HTML, and CSS I have created an on-screen calculator.
 
-<b>Objectives</b>
+# <b>Objectives</b>
  
 1. Function for each math operator
 2. Operator function that takes an operator and calls one of the previous functions
