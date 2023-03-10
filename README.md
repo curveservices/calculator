@@ -1,7 +1,9 @@
 # calculator
-Live Demo :
+
+## Live Demo :point_down:
 <a href="https://curveservices.github.io/calculator/">Calculator</a>
 
+## PC View
 <img width="1080" alt="Screenshot 2023-02-22 at 15 30 15" src="https://user-images.githubusercontent.com/101556296/220672876-6a473a2e-c8e8-43ab-8288-a3f61689cae4.png">
 
 
