@@ -1,4 +1,4 @@
-# calculator
+# Calculator
 
 ### Live Demo :point_down:
 <a href="https://curveservices.github.io/calculator/">Calculator</a>
@@ -10,11 +10,11 @@
 
 This was the final project the <a href="https://www.theodinproject.com/lessons/foundations-calculator">Calculator assignment</a> on the foundation course of <a href="https://www.theodinproject.com/lessons/foundations-calculator">The Odin Project<a>. I have combind everything I've learned so far. Using JavaScript, HTML, and CSS I have created an on-screen calculator.
 
-# Provided Assets
+## Provided Assets
 
 - none
 
-# Objectives
+## Objectives
  
 1. Function for each math operator
 2. Operator function that takes an operator and calls one of the previous functions
@@ -30,7 +30,7 @@ This was the final project the <a href="https://www.theodinproject.com/lessons/f
 12. (+) 'Backspace' button for wrong entries
 13. (+) Keyboard support
 
-# Extra Credit
+## Extra Credit
 
 - Users can get floating point numbers if they do the math required to get one, but they can’t type them in yet. Add a . button and let users input decimals!
 - Make it look nice! This is a great project to practice your CSS skills
