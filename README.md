@@ -1,9 +1,8 @@
-# Calculator
+# Project: Calculator
 
-### Live Demo :point_down:
-<a href="https://curveservices.github.io/calculator/">Calculator</a>
+### Live Demo :point_right: <a href="https://curveservices.github.io/calculator/">Calculator</a>
 
-### PC View
+### PC View 👇
 <img width="1080" alt="Screenshot 2023-02-22 at 15 30 15" src="https://user-images.githubusercontent.com/101556296/220672876-6a473a2e-c8e8-43ab-8288-a3f61689cae4.png">
 
 ## Overview
@@ -37,7 +36,16 @@ This was the final project the <a href="https://www.theodinproject.com/lessons/f
 - Add a “backspace” button, so the user can undo if they click the wrong number
 - Add keyboard support! 
 
-***Rozla-Dev 11/2022***
+## Languages & Tools
+
+<a href="https://javascript.info/"><img width="100" alt="Javascript" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-plain.svg" /></a> <a href="https://html.com/html5/"><img width="100" alt="HTML5" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-plain-wordmark.svg" /></a> <a href="https://css3.com/"><img width="100" alt="CSS3" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-plain-wordmark.svg" /></a>
+          
+
+
+***<a href="https://twitter.com/Crypto_Rozla"> Rozla-Dev </a> 00-00-2023***
+
+
+[Back to top 👆](#project-calculator)
 
 
 
