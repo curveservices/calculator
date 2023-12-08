@@ -19,6 +19,7 @@ body {
 }
 
 .calculator {
+    position: relative;
     width:max-content;
     overflow: hidden;
     background-color: #E8E8E8;
